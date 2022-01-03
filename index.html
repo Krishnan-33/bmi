@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/floating-labels.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BMI</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 ">
+                    <h3>Body Mass Index</h3>
+                    <p>Body mass index (BMI) is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2, resulting from mass in kilograms and height in metres.</p>
+                </div>
+                <div class="col-5 pt-4 pl-md-5 pb-4 pb-md-0">
+                    <img src="images/bmi_formula.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-xl-3 offset-lg-2 offset-md-1 col-xl-4 col-lg-5 col-md-6 order-md-1 order-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-head p-2">
+                            <h4>Calculate your BMI index</h4>
+                        </div>
+                        <div class="card-body bg-primary text-dark">
+                            <form action="" method="post">
+                                <div class="form-group form-label-group in-border">
+                                    <input type="number" class="form-control" placeholder="Enter height (in meters)" name="height" id="height">
+                                    <label for="height">Enter height (in meters)</label>
+                                </div>
+                                <div class="form-group form-label-group in-border">
+                                    <input type="number" class="form-control" placeholder="Enter weight (in Kilograms)" name="weight" id="weight">
+                                    <label for="weight">Enter weight (in Kilograms)</label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" name="bmi" id="bmi" class="btn btn-dark float-right shadow-none">Calculate</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 pt-4 pl-md-5 pb-4 pb-md-0 order-md-2 order-1">
+                    <img src="images/bmi_chart.png" alt="" width="240">
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-xl-3 offset-lg-2 offset-md-1 col-xl-4 col-lg-5 col-md-6">
+                    <div class="bmi_container pt-4 d-none">
+                        <h4>Your BMI is : <span id="final_bmi"></span></h4>
+                        <h4>You are <span id="bmi_mssg"></span></h4>
+                        <button type="button" id="bmi_reset" class="btn btn-dark float-right shadow-none">Calculate Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+</html>
