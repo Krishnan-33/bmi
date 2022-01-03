@@ -52,6 +52,8 @@ $(document).ready(function () {
     $('#bmi_reset').on('click',function(){
         $('#height').val("");
         $('#weight').val("");
+        $('label').css("bottom","auto");
         $('.bmi_container').addClass('d-none');
+        
     });
 });

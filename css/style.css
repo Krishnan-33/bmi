@@ -2,6 +2,7 @@ body{
     background-color: #E8BBBB;
     display: flex;
     align-items: center;
+    /* overflow-x: hidden; */
 }
 section{
     margin: auto;
@@ -37,4 +38,11 @@ input:focus{
 input{
     height: 50px!important;
     color:black!important;
+}
+footer{
+    color: whitesmoke;
+    background-color: black;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
 }
